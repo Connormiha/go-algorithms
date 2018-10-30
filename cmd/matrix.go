@@ -5,7 +5,7 @@ func SpiralFromCenter(matrix [][]int) []int {
 	size := len(matrix)
 	resultSize := size * size
 	result := make([]int, resultSize, resultSize)
-	center := int(float64(size) / 2)
+	center := size / 2
 	var i = center
 	var j = center
 	result[0] = matrix[i][i]
