@@ -1,4 +1,4 @@
-module mod
+module github.com/Connormiha/go-algorithms
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
