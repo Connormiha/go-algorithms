@@ -1,13 +1,11 @@
 package main
 
-import (
-	"math"
-)
-
 // SpiralFromCenter foo
 func SpiralFromCenter(matrix [][]int) []int {
-	result := make([]int, len(matrix)*len(matrix))
-	center := int(math.Floor(float64(len(matrix)) / 2))
+	size := len(matrix)
+	resultSize := size * size
+	result := make([]int, resultSize, resultSize)
+	center := int(float64(size) / 2)
 	var i = center
 	var j = center
 	result[0] = matrix[i][i]
