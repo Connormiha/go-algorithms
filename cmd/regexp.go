@@ -1,4 +1,4 @@
-package main
+package cmd
 
 // IsMatch regexp with ".", "*" supports
 func IsMatch(text, pattern string) bool {

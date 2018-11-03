@@ -1,4 +1,4 @@
-package main
+package cmd
 
 // SpiralFromCenter foo
 func SpiralFromCenter(matrix [][]int) []int {

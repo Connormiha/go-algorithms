@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import "sort"
 
@@ -25,17 +25,19 @@ func MaxSumSubArray(arr []int) int {
 
 // FindArrayQuadruplet desc
 func FindArrayQuadruplet(arr []int, sum int) []int {
-	if len(arr) < 4 {
+	length := len(arr)
+
+	if length < 4 {
 		return []int{}
 	}
 
 	sort.Ints(arr)
 
-	for i := 0; i < len(arr)-3; i++ {
-		for j := i + 1; j < len(arr)-2; j++ {
+	for i := 0; i < length-3; i++ {
+		for j := i + 1; j < length-2; j++ {
 			currentSum := sum - arr[i] - arr[j]
 			start := j + 1
-			end := len(arr) - 1
+			end := length - 1
 
 			for start < end {
 				startNum := arr[start]

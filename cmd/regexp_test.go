@@ -1,4 +1,4 @@
-package main
+package cmd
 
 import (
 	"testing"
@@ -34,6 +34,8 @@ func TestIsMatch(t *testing.T) {
 		[2]string{"", ".*"},
 		[2]string{"abcdefgz", ".*"},
 		[2]string{"abcdefgz", ".*e*"},
+		[2]string{"*", "..*"},
+		[2]string{".", "..*"},
 	}
 
 	for _, value := range validValues {
